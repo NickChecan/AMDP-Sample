@@ -5,12 +5,26 @@
    <VSEOCLASS>
     <CLSNAME>ZCL_AMDP_DEMO</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>AMDP Demo w Flight Ref Scenario</DESCRIPT>
+    <DESCRIPT>Sample AMDP Class</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
     <UNICODE>X</UNICODE>
    </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_AMDP_DEMO</CLSNAME>
+     <CMPNAME>GET_FLIGHTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT> Method reads flights from HANA DB using AMDP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_AMDP_DEMO</CLSNAME>
+     <CMPNAME>TY_RESULT_LINE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type of Flights from HANA DB</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
   </asx:values>
  </asx:abap>
 </abapGit>

@@ -1,3 +1,9 @@
+"!<p class="shorttext synchronized">Sample AMDP Class</p>
+"! <ol>
+"!    <li>Reads flights from HANA DB</li>
+"!    <li>Converts currency to EUR</li>
+"! </ol>
+"! <p>Implements the interface { @link INTF:if_oo_adt_classrun } </p>
 class zcl_amdp_demo definition
   public
   final
@@ -8,6 +14,7 @@ public section.
     interfaces: if_amdp_marker_hdb.
     interfaces: if_oo_adt_classrun.
 
+    "!<p class="shorttext synchronized">Table type of Flights from HANA DB</p>
     types: begin of ty_result_line,
         airline           type s_carrname,
         flight_connection type s_conn_id,
@@ -28,6 +35,7 @@ public section.
     types: ty_flights_table type standard table of ty_flights_line with empty key.
     types: ty_flights       type standard table of sflight.
 
+    "! <p class="shorttext synchronized"> Method reads flights from HANA DB using AMDP</p>
     methods: get_flights
     exporting value(result) type ty_result_table
     raising cx_amdp_execution_error.
