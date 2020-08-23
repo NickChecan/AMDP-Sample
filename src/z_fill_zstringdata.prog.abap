@@ -3,11 +3,17 @@
 *&---------------------------------------------------------------------*
 report z_fill_zstringdata.
 
+*&---------------------------------------------------------------------*
+*& Selection Screen
+*&---------------------------------------------------------------------*
 selection-screen begin of block a with frame.
 parameters: rb_add radiobutton group op default 'X'.
 parameters: rb_del radiobutton group op.
 selection-screen end of block a.
 
+*&---------------------------------------------------------------------*
+*& Events
+*&---------------------------------------------------------------------*
 start-of-selection.
 
     data(sub_routine) = cond #(
@@ -25,6 +31,10 @@ start-of-selection.
     ).
 
     message lv_message type 'S'.
+
+*&---------------------------------------------------------------------*
+*& Sub Routines
+*&---------------------------------------------------------------------*
 
 form: add_data.
 
